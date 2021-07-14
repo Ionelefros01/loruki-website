@@ -1,0 +1,258 @@
+/* Utilities */
+.container {
+    max-width: 1100px; /* from each side there will be a gap of 1100px/ not to be near the margin */
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn /* style the buton */{
+    display: inline-block;
+    padding: 10px 30px; /*make the button bigger */
+    cursor: pointer;
+    background: var(--primary-color); /* set the color of the box to the primary one in the root */
+    color: #fff; /* set the color of the text button white */
+    border: none; /* no border for the button */
+    border-radius: 5px; /* make the box of the border round, not square */
+}
+
+.btn-outline {
+    background-color: transparent; /*Set the Read Me button color to transparent */
+    border: 1px #fff solid; /* set the color of the border to white solide and also the width of 1 px */
+}
+
+.btn:hover {
+    transform: scale(0.98); /* when you move the cursor over the button, it makes the button smaller with 0.02 percents */
+
+}
+
+/* Backgrounds & colored buttons*/
+
+.bg-primary, 
+.btn-primary {
+    background-color: var(--primary-color); /* Assign the primary color as the background*/
+    color: #fff; /* Assignt the text color to white*/
+}
+
+.bg-secondary, 
+.btn-secondary {
+    background-color: var(--secondary-color); /* Assign the primary color as the background*/
+    color: #fff; /* Assignt the text color to white*/
+}
+
+.bg-dark, 
+.btn-dark {
+    background-color: var(--dark-color); /* Assign the primary color as the background*/
+    color: #fff; /* Assignt the text color to white*/
+}
+
+
+.bg-light, 
+.btn-light {
+    background-color: var(--light-color); /* Assign the primary color as the background*/
+    color: #333; /* Assignt the text color to black*/
+}
+
+.bg-primary a, 
+.btn-primary a 
+
+.bg-secondary a, 
+.btn-secondary a 
+
+.bg-dark a, 
+.btn-dark a {
+    color: #fff;
+
+}
+
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color); /* Assign the primary color as the background*/
+}
+
+.text-secondary {
+    color: var(--secondary-color); /* Assign the primary color as the background*/
+}
+
+.text-dark {
+    color: var(--dark-color); /* Assign the primary color as the background*/
+}
+
+
+.text-light{
+    color: var(--light-color); /* Assign the primary color as the background*/ 
+}
+
+
+
+/* Text sizes */
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Alert */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px; /* space from the margins in within the cell   10px (bottom up) 20px (left right) */
+    font-weight: bold;
+    margin: 15px; /* space from the margins outside the cell */
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-succes {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+
+    grid-template-columns: repeat(3, 1fr); /* put all the 3 stats in 3 equal boxes on the page */
+}
+
+/* Margin */
+
+.my-1 {
+    margin: 1rem 0; /* 1rem - a rem unit is a css unit that is a multipleaer of the root elements font size (default is 16 px) */ 
+}
+
+.my-2 {
+    margin: 1.5rem 0; /* 1.5rem = 24px */
+}
+
+.my-3 {
+    margin: 2rem 0; /* 2rem = 32px */
+}
+
+.my-4 {
+    margin: 3rem 0; /* 3rem = 48x */
+}
+
+.my-5 {
+    margin: 4rem 0; /* 2rem = 64px */
+}
+
+
+
+
+.m-1 {
+     margin: 1rem ; /* 1rem - a rem unit is a css unit that is a multipleaer of the root elements font size (default is 16 px) */ 
+    }
+
+    .m-2 {
+    margin: 1.5rem ; /* 1.5rem = 24px */
+    }
+
+    .m-3 {
+    margin: 2rem ; /* 2rem = 32px */
+    }
+
+    .m-4 {
+    margin: 3rem ; /* 3rem = 48x */
+    }
+
+.m-5 {
+    margin: 4rem ; /* 2rem = 64px */
+}
+
+
+/* Padding */
+
+.py-1 {
+    padding: 1rem 0; /* 1rem - a rem unit is a css unit that is a multipleaer of the root elements font size (default is 16 px) */ 
+}
+
+.py-2 {
+    padding: 1.5rem 0; /* 1.5rem = 24px */
+}
+
+.py-3 {
+    padding: 2rem 0; /* 2rem = 32px */
+}
+
+.py-4 {
+    padding: 3rem 0; /* 3rem = 48x */
+}
+
+.py-5 {
+    padding: 4rem 0; /* 2rem = 64px */
+}
+
+.p-1 {
+    padding: 1rem ; /* 1rem - a rem unit is a css unit that is a multipleaer of the root elements font size (default is 16 px) */ 
+   }
+
+   .p-2 {
+   padding: 1.5rem ; /* 1.5rem = 24px */
+   }
+
+   .p-3 {
+   padding: 2rem ; /* 2rem = 32px */
+   }
+
+   .p-4 {
+   padding: 3rem ; /* 3rem = 48x */
+   }
+
+.p-5 {
+   padding: 4rem ; /* 2rem = 64px */
+}
+
+
